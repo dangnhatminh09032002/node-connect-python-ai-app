@@ -1,7 +1,6 @@
-const childProcess = require("child_process");
+const { spawn, exec } = require("child_process");
 const encodingJP = require("encoding-japanese");
 
-const spawn = childProcess.spawn;
 const pythonProcess = spawn(
   "python",
   ["handwritten-japanese-ocr-touch-panel-demo.py"],
